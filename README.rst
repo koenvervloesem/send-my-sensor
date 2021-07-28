@@ -102,8 +102,8 @@ Supported devices
 
 This procedure has been tested with:
 
-* Nordic Semiconductor's `nRF52840 Dongle <https://docs.zephyrproject.org/latest/boards/arm/nrf52840dongle_nrf52840/doc/index.html>`_ (board name ``nrf52840dongle_nrf52840``) with an I²C breakout board of the Bosch BME280 temperature/humidity/pressure sensor. Solder headers to the dongle and connect SDA to pin 0.31 and SCL to pin 0.29. If your BME280 sensor has another I²C address than 0x76, change this in the device overlay `nrf52840dongle_nrf52840.overlay <https://github.com/koenvervloesem/send-my-sensor/blob/main/app/nrf52840dongle_nrf52840.overlay>`_.
-* Ruuvi's nRF52832-based `RuuviTag <https://docs.zephyrproject.org/latest/boards/arm/ruuvi_ruuvitag/doc/index.html>`_ (board name ``ruuvi_ruuvitag``), which has a built-in BME280, using the `RuuviTag Development Kit <https://ruuvi.com/products/ruuvitag-development-kit/>`_.
+* Nordic Semiconductor's `nRF52840 Dongle <https://docs.zephyrproject.org/latest/boards/arm/nrf52840dongle_nrf52840/doc/index.html>`_ (board name ``nrf52840dongle_nrf52840``) with an I²C breakout board of the Bosch BME280 temperature/humidity/pressure sensor. Solder headers to the dongle and connect the BME280's SDA to pin 0.31, SCL to pin 0.29, GND to GND and VCC to VDD. If your BME280 sensor has another I²C address than 0x76, change this in the device overlay `nrf52840dongle_nrf52840.overlay <https://github.com/koenvervloesem/send-my-sensor/blob/main/app/nrf52840dongle_nrf52840.overlay>`_.
+* Ruuvi's nRF52832-based `RuuviTag <https://docs.zephyrproject.org/latest/boards/arm/ruuvi_ruuvitag/doc/index.html>`_ (board name ``ruuvi_ruuvitag``), which has a built-in BME280. Use the `RuuviTag Development Kit <https://ruuvi.com/products/ruuvitag-development-kit/>`_ to flash the firmware.
 
 Other Bluetooth Low Energy devices supported by Zephyr should work as well, as long as they have a built-in BME280 or you can connect one over I²C. You may need a custom device overlay. Please let me know if you manage to run this firmware on another board, or if you need assistance, so I can add it to the list of devices it has been tested with.
 
