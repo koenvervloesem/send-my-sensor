@@ -107,6 +107,11 @@ This procedure has been tested with:
 
 Other Bluetooth Low Energy devices supported by Zephyr should work as well, as long as they have a built-in BME280 or you can connect one over I²C. You may need a custom device overlay. Please let me know if you manage to run this firmware on another board, or if you need assistance, so I can add it to the list of devices it has been tested with.
 
+Learn more about Bluetooth Low Energy development
+*************************************************
+
+If you want to learn more about Bluetooth Low Energy development, read my book `Develop your own Bluetooth Low Energy Applications for Raspberry Pi, ESP32 and nRF52 with Python, Arduino and Zephyr <https://koen.vervloesem.eu/books/develop-your-own-bluetooth-low-energy-applications/>`_ and the accompanying GitHub repository `koenvervloesem/bluetooth-low-energy-applications <https://github.com/koenvervloesem/bluetooth-low-energy-applications>`_.
+
 Acknowledgments
 ***************
 
